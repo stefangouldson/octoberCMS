@@ -1,4 +1,4 @@
-1587069122a:1:{s:16:"site/sidebar.htm";a:6:{s:8:"fileName";s:16:"site/sidebar.htm";s:7:"content";s:1231:"[blogPosts]
+1587072993a:1:{s:16:"site/sidebar.htm";a:6:{s:8:"fileName";s:16:"site/sidebar.htm";s:7:"content";s:990:"[blogPosts]
 postsPerPage = "5"
 categoryPage = "blog/category"
 postPage = "blog/post"
@@ -19,6 +19,14 @@ sortOrder = "published_at desc"
 </div>
 
 <div class="sidebar-segment">
+    <h2 class="segment-title">Main Menu</h2>
+    <ul class="segment-list">
+        <li><a href="{{ 'home'|page }}">Home</a></li> 
+        <li><a href="{{ 'contact'|page }}">Contact</a></li>    
+    </ul>
+</div>
+
+<div class="sidebar-segment">
     <h2 class="segment-title">Recent posts</h2>
     <ul class="segment-list">
         {% for post in blogPosts.posts %}
@@ -27,19 +35,7 @@ sortOrder = "published_at desc"
     </ul>
 </div>
 
-<div class="sidebar-segment">
-    <h2 class="segment-title">Follow me</h2>
-    <ul class="segment-list">
-        {% if this.theme.twitter_url %}
-            <li><a href="{{ this.theme.twitter_url }}" target="_blank">Twitter</a></li>
-        {% endif %}
-        {% if this.theme.facebook_url %}
-            <li><a href="{{ this.theme.facebook_url }}" target="_blank">Facebook</a></li>
-        {% endif %}
-        <li><a href="{{ 'blog/rss'|page }}">RSS Feed</a></li>
-    </ul>
-</div>
-";s:5:"mtime";i:1587067451;s:6:"markup";s:1109:"<div class="sidebar-close visible-sm visible-xs">
+";s:5:"mtime";i:1587070167;s:6:"markup";s:867:"<div class="sidebar-close visible-sm visible-xs">
     <a href="javascript:;" onclick="toggleSidebar()" class="close">&times;</a>
 </div>
 
@@ -53,23 +49,18 @@ sortOrder = "published_at desc"
 </div>
 
 <div class="sidebar-segment">
+    <h2 class="segment-title">Main Menu</h2>
+    <ul class="segment-list">
+        <li><a href="{{ 'home'|page }}">Home</a></li> 
+        <li><a href="{{ 'contact'|page }}">Contact</a></li>    
+    </ul>
+</div>
+
+<div class="sidebar-segment">
     <h2 class="segment-title">Recent posts</h2>
     <ul class="segment-list">
         {% for post in blogPosts.posts %}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
         {% endfor %}
-    </ul>
-</div>
-
-<div class="sidebar-segment">
-    <h2 class="segment-title">Follow me</h2>
-    <ul class="segment-list">
-        {% if this.theme.twitter_url %}
-            <li><a href="{{ this.theme.twitter_url }}" target="_blank">Twitter</a></li>
-        {% endif %}
-        {% if this.theme.facebook_url %}
-            <li><a href="{{ this.theme.facebook_url }}" target="_blank">Facebook</a></li>
-        {% endif %}
-        <li><a href="{{ 'blog/rss'|page }}">RSS Feed</a></li>
     </ul>
 </div>";s:4:"code";N;s:9:"blogPosts";a:4:{s:12:"postsPerPage";s:1:"5";s:12:"categoryPage";s:13:"blog/category";s:8:"postPage";s:9:"blog/post";s:9:"sortOrder";s:17:"published_at desc";}}}
