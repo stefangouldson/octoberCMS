@@ -1,0 +1,15 @@
+name: Eduonix
+description: 'Basic bootswatch theme'
+author: Eduonix
+homepage: 'http://eduonix.com'
+code: ''
+form:
+    fields:
+        site_name:
+            label : Site name
+            comment: The global website name
+            default: First OctoberCMS 
+        site_description:
+            label: Site Description
+            comment: The global website description
+            default: This is the first theme I have made using the OctoberCMS with the help of Eduonix. They have a great course!
